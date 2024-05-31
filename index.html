@@ -25,8 +25,18 @@
         .icon {
             margin: 0 10px;
             cursor: pointer;
-            width: 50px; /* Adjust the size of the icons */
-            height: 50px; /* Adjust the size of the icons */
+        }
+        #canvas-icon img {
+            width: 100px;
+            height: 80px;
+        }
+        #gmail-icon img {
+            width: 80px;
+            height: 120px;
+        }
+        #studentvue-icon img {
+            width: 120px;
+            height: 100px;
         }
         #search-container {
             display: flex;
@@ -58,9 +68,9 @@
 </head>
 <body>
     <div class="icon-container">
-        <a href="https://bsd.instructure.com/" target="_blank" class="icon"><img src="bsd.png" alt="Canvas"></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="icon"><img src="gmail.png" alt="Gmail"></a>
-        <a href="https://studentvue.beaverton.k12.or.us/Home_PXP2.aspx" target="_blank" class="icon"><img src="studentvue.png" alt="StudentVUE"></a>
+        <a href="https://bsd.instructure.com/" target="_blank" class="icon" id="canvas-icon"><img src="bsd.png" alt="Canvas"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="icon" id="gmail-icon"><img src="gmail.png" alt="Gmail"></a>
+        <a href="https://studentvue.beaverton.k12.or.us/Home_PXP2.aspx" target="_blank" class="icon" id="studentvue-icon"><img src="studentvue.png" alt="StudentVUE"></a>
     </div>
     <div id="search-container">
         <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank">

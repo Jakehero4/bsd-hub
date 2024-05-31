@@ -1,1 +1,70 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .icon {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        #search-container {
+            display: flex;
+            justify-content: center;
+        }
+        #search-form {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+        #search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+        #search-btn {
+            border: none;
+            background-color: #4285f4;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-container">
+        <a href="https://www.example.com" target="_blank" class="icon"><img src="icon1.png" alt="Icon 1"></a>
+        <a href="https://www.example.com" target="_blank" class="icon"><img src="icon2.png" alt="Icon 2"></a>
+        <a href="https://www.example.com" target="_blank" class="icon"><img src="icon3.png" alt="Icon 3"></a>
+    </div>
+    <div id="search-container">
+        <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" id="search-input" name="q" placeholder="Search on Google">
+            <button type="submit" id="search-btn">Search</button>
+        </form>
+    </div>
+</body>
+</html>

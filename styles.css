@@ -42,7 +42,7 @@ h2 {
 
 .link-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 15px;
   justify-items: center;
 }
@@ -59,6 +59,9 @@ h2 {
   border-radius: 10px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 150px;  /* Ensure each button has a fixed height */
+  max-width: 150px;  /* Limit max width */
+  text-align: center; /* Align text below icons */
 }
 
 .link-button:hover {
@@ -67,14 +70,15 @@ h2 {
 }
 
 .link-icon {
-  width: 50px;
-  height: 50px;
+  width: 50px; /* Set fixed width */
+  height: 50px; /* Set fixed height */
+  object-fit: contain; /* Prevent stretching or squishing of the icon */
   margin-bottom: 10px;
-  object-fit: cover;
 }
 
 .link-button p {
-  font-size: 16px;
+  font-size: 14px;  /* Reduced font size */
   font-weight: bold;
+  margin-top: 5px;
 }
 

@@ -1,79 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSD Hub</title>
-    <link rel="icon" href="bsd.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .icon-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .icon {
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        #search-container {
-            display: flex;
-            justify-content: center;
-        }
-        #search-form {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 5px;
-            width: 300px;
-        }
-        #search-input {
-            flex: 1;
-            border: none;
-            outline: none;
-            padding: 5px;
-        }
-        #search-btn {
-            border: none;
-            background-color: #4285f4;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="icon-container">
-        <a href="https://bsd.instructure.com/" target="_blank" class="icon" id="canvas-icon">
-            <img src="bsd.png" alt="Canvas" width="100" height="100">
-        </a>
-        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="icon" id="gmail-icon">
-            <img src="gmail.png" alt="Gmail" width="100" height="80">
-        </a>
-        <a href="https://drive.google.com/drive/my-drive" target="_blank" class="icon" id="drive-icon">
-            <img src="drive.webp" alt="Google Drive" width="150" height="150">
-        </a>
-        <a href="https://studentvue.beaverton.k12.or.us/Home_PXP2.aspx" target="_blank" class="icon" id="studentvue-icon">
-            <img src="studentvue.png" alt="StudentVUE" width="100" height="100">
-        </a>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    
+    <!-- Google Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search Google..." />
+      <button id="searchButton">Search</button>
     </div>
-    <div id="search-container">
-        <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank">
-            <input type="text" id="search-input" name="q" placeholder="Search on Google">
-            <button type="submit" id="search-btn">Search</button>
-        </form>
+    
+    <!-- Weather Section -->
+    <div class="weather-section">
+      <h2>Current Weather</h2>
+      <div id="weather">
+        <p>Loading...</p>
+      </div>
     </div>
+    
+    <!-- Button Icons with Links -->
+    <div class="links-section">
+      <h2>Quick Links</h2>
+      <div class="link-buttons">
+        <button onclick="window.location.href='https://www.google.com'">Google</button>
+        <button onclick="window.location.href='https://www.github.com'">GitHub</button>
+        <button onclick="window.location.href='https://www.stackoverflow.com'">StackOverflow</button>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>

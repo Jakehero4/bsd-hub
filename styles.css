@@ -1,4 +1,6 @@
 /* styles.css */
+
+/* General styling */
 * {
   margin: 0;
   padding: 0;
@@ -27,60 +29,52 @@ h2 {
   color: #333;
 }
 
-.search-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.search-bar input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.search-bar button {
-  padding: 10px 20px;
-  background-color: #4285f4;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-.search-bar button:hover {
-  background-color: #357ae8;
-}
-
-.weather-section {
-  background-color: #e7f1ff;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.weather-section h2 {
-  margin-bottom: 10px;
-}
-
-.link-buttons {
-  display: flex;
-  justify-content: space-around;
+/* Quick Links Section */
+.links-section {
   margin-top: 20px;
 }
 
-.link-buttons button {
-  padding: 15px 20px;
-  font-size: 16px;
-  background-color: #34a853;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.links-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
 }
 
-.link-buttons button:hover {
-  background-color: #2c8f42;
+.link-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  justify-items: center;
 }
+
+.link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.link-button p {
+  font-size: 16px;
+  font-weight: bold;
+}
+

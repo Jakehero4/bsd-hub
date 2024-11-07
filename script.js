@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
       const lon = position.coords.longitude;
 
       // Call OpenWeatherMap API
-      const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
+      const apiKey = '0256c27862b313bd724dfd3bb6366df9'; // Replace with your OpenWeatherMap API key
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
       fetch(url)

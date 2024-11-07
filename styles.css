@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* General styling */
 * {
   margin: 0;
@@ -49,7 +47,6 @@ h2 {
 
 .link-button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -76,8 +73,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Remove text from the button */
 .link-button p {
-  font-size: 14px;  /* Reduced font size for text */
-  font-weight: bold;
+  display: none; /* Hide the text */
 }
-
